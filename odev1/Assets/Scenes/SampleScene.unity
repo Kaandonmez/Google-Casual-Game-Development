@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 574986914}
   - component: {fileID: 574986913}
   - component: {fileID: 574986912}
-  - component: {fileID: 574986911}
   - component: {fileID: 574986916}
+  - component: {fileID: 574986917}
   m_Layer: 0
   m_Name: planet1
   m_TagString: Planet1
@@ -144,21 +144,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &574986911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574986910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afbdd90a0974d949b8e6d3446fa0ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
-  angleSpeed: 1
-  changeOrbitDirection: 0
 --- !u!135 &574986912
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -251,6 +236,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angleSpeed: 40
   changeRotationDirection: 1
+--- !u!114 &574986917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574986910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a33a644a28f444f95ac0e8dd342a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
+  angleSpeed: 3
+  changeOrbitDirection: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,8 +451,8 @@ GameObject:
   - component: {fileID: 985307454}
   - component: {fileID: 985307453}
   - component: {fileID: 985307452}
-  - component: {fileID: 985307451}
   - component: {fileID: 985307456}
+  - component: {fileID: 985307457}
   m_Layer: 0
   m_Name: planet3
   m_TagString: Planet3
@@ -460,21 +460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &985307451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985307450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afbdd90a0974d949b8e6d3446fa0ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
-  angleSpeed: 0.49
-  changeOrbitDirection: 0
 --- !u!135 &985307452
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -567,6 +552,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angleSpeed: 40
   changeRotationDirection: 1
+--- !u!114 &985307457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985307450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a33a644a28f444f95ac0e8dd342a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
+  angleSpeed: 0.5
+  changeOrbitDirection: 1
 --- !u!1 &1903064129
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,8 +691,8 @@ GameObject:
   - component: {fileID: 1950400425}
   - component: {fileID: 1950400424}
   - component: {fileID: 1950400423}
-  - component: {fileID: 1950400422}
   - component: {fileID: 1950400427}
+  - component: {fileID: 1950400428}
   m_Layer: 0
   m_Name: planet2
   m_TagString: Planet2
@@ -700,21 +700,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1950400422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950400421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afbdd90a0974d949b8e6d3446fa0ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
-  angleSpeed: 0.79
-  changeOrbitDirection: 1
 --- !u!135 &1950400423
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -807,3 +792,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angleSpeed: 40
   changeRotationDirection: 1
+--- !u!114 &1950400428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950400421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a33a644a28f444f95ac0e8dd342a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0
+  angleSpeed: 1.25
+  changeOrbitDirection: 0
