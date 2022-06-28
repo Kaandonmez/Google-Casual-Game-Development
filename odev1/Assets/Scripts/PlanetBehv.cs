@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class PlanetBehv : MonoBehaviour
 {
-    //rotate object around y-axis, after 1 full rotation, print "rotation comlete"
-
-    public float angle = 0;
+    private float angle = 0;
     public float angleSpeed = 1;
 
     IEnumerator rotate;
 
-    //serializedfield checkbox
     [SerializeField]
     private bool changeRotationDirection = true;
 

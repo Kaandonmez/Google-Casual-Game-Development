@@ -6,7 +6,7 @@ public class RotBehv : MonoBehaviour
 {
     public float radius = 4f;
 
-    public float angle = 0;
+    private float angle = 0;
     public float angleSpeed = 1;
 
     [SerializeField]
@@ -14,7 +14,7 @@ public class RotBehv : MonoBehaviour
 
     IEnumerator orbit;
 
-    //store staring posiiton of object
+    //store staring positon of object
     Vector3 Pos;
 
     // Start is called before the first frame update
