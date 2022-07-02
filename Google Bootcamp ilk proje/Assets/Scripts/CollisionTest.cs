@@ -21,4 +21,9 @@ public class CollisionTest : MonoBehaviour
     }
 
     private void OnTriggerStay(Collider other) { }
+
+    void update()
+    {
+        Debug.Log("CollisionTest script updated");
+    }
 }
