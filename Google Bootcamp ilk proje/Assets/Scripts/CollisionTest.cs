@@ -19,4 +19,6 @@ public class CollisionTest : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerStay(Collider other) { }
 }
