@@ -1,8 +1,10 @@
 ![alt text](https://i.hizliresim.com/7zrzxou.jpg)
 
-Tüm gezegenler kendi etrafında dönebiliyor.
-3 adet gezegen ortadaki güneşin etrafında dönüyor.
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/13854886/177000519-73b26acf-eec1-499b-8255-d8fe9926408d.gif)
 
-- Gezegenlerin dönme yarı çapı, güneş etrafındaki dönme hızı ve dönme yönü ayarlanabiliyor.
-- Aynı şekilde tüm gök cisimleri kendi etrafında dönme yönü ve hızı ayarlanabiliyor.
+### All planets can rotate around themselves.
+#### 3 planets orbit around the sun.
+
+#### - The radius of rotation of the planets, the speed of rotation around the sun and the direction of rotation can be adjusted.
+#### - In the same way, the rotation direction and speed of all celestial bodies can be adjusted.
 
