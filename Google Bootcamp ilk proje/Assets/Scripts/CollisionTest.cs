@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CollisionTest : MonoBehaviour
 {
+    void Start()
+    {
+        Debug.Log("Start");
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
