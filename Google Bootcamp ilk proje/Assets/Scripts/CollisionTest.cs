@@ -18,4 +18,9 @@ public class CollisionTest : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void update()
+    {
+        Debug.Log("CollisionTest script updated");
+    }
 }
