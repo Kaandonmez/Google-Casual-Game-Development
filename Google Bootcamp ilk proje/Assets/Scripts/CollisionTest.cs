@@ -7,6 +7,7 @@ public class CollisionTest : MonoBehaviour
     void Start()
     {
         Debug.Log("Start");
+        Debug.Log("CollisionTest script started");
     }
 
     void OnTriggerEnter(Collider other)
