@@ -6,6 +6,7 @@ public class PlanetBehv : MonoBehaviour
 {
     private float angle = 0; // angle of rotation
     public float angleSpeed = 1; // speed of rotation
+    private bool isTriggered = false; // check if planet is triggered
 
     [SerializeField]
     private bool changeRotationDirection = true; // direction of rotation
@@ -33,7 +34,7 @@ public class PlanetBehv : MonoBehaviour
                 if (angle >= 360)
                 {
                     angle = 0; //reset angle if it reaches 360
-                    Debug.Log(transform.tag + " self-rotation complete"); //print self-rotation complete message with tag of planet
+                    Debug.Log(gameObject.name + " self-rotation complete"); //print self-rotation complete message with tag of planet
                 }
             }
             else
@@ -44,11 +45,35 @@ public class PlanetBehv : MonoBehaviour
                 if (angle <= 0)
                 {
                     angle = 360; //reset angle if it reaches 0
-                    Debug.Log(transform.tag + " self-rotation complete"); //print self-rotation complete message with tag of planet
+                    Debug.Log(gameObject.name + " self-rotation complete"); //print self-rotation complete message with tag of planet
                 }
             }
 
             yield return new WaitForSeconds(0.01f); //wait for 0.01 seconds before repeating
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (!isTriggered)
+        {
+            if (
+                other.gameObject.tag == "Year"
+                && gameObject.tag != "Sun"
+                && gameObject.tag != "Meteor"
+            )
+            {
+                Debug.Log("One year has passed for " + gameObject.name);
+                isTriggered = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Year" && gameObject.tag != "Sun" && gameObject.tag != "Meteor")
+        {
+            isTriggered = false;
         }
     }
 }

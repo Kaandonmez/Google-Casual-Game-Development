@@ -14,6 +14,12 @@ public class OrbitBehv : MonoBehaviour
 
     IEnumerator orbit; // coroutine for orbit rotation process
 
+    //choose orbit axis from radio button x,y,z
+
+    public bool axisX = false;
+    public bool axisY = true;
+    public bool axisZ = false;
+
     //store staring positon of object
     Vector3 Pos;
 

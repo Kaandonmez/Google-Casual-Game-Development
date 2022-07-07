@@ -8,6 +8,10 @@ TagManager:
   - Sun
   - Planet2
   - Planet3
+  - Planet4
+  - Year
+  - Meteor
+  - Planet
   layers:
   - Default
   - TransparentFX
