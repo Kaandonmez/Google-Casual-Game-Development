@@ -4,7 +4,7 @@
 ![Yeni proje21](https://user-images.githubusercontent.com/13854886/179966427-aa83a4ff-f299-4aab-9970-bee120d8a063.gif)
 
 
-
+#
 ### Assignment content
 
 #### - All planets and meteors orbit around the sun according to the gravitational force. (Orbits are not regular yet)
@@ -19,12 +19,13 @@
 
 #### - Clicking on an object (except meteor) opens a panel. The planet name (name in the hierarchy panel) and rigidbody mass are printed in the panel. The panel can be closed with the red button on the top right. (As long as the panel remains open, the camera does not move and the meteor cannot be created.)
 
-#### - All the criteria required in the previous assignment are also met here.
-
-#### - Created shader with shader graph in meteors and sun.
+#### - Created shader with shader graph for meteors and sun.
 
 #### - The entire project has been converted to URP.
 
+#### - All the criteria required in the previous assignment are also met here.
+
+#
 
 ### Previous assignment content
 
@@ -34,5 +35,12 @@
 #### - ~~The radius of rotation of the planets, the speed of rotation around the sun and the direction of rotation can be adjusted.~~ (Planetary orbits dynamically respond to the position of other planets in the environment and the position of meteorites. Therefore, it is possible for now to see a planet sticking to the sun. :) )
 #### - ~~In the same way,~~ the rotation direction and speed of all celestial bodies can be adjusted.
 
+#
+ ### Shaders
+ #### Meteor Shader
+ ![image](https://user-images.githubusercontent.com/13854886/179977298-561a27ca-3ddf-43db-89df-aa8f3a2f3560.png)
+ #
+ #### Sun Shader
+ ![image](https://user-images.githubusercontent.com/13854886/179977567-9e424a4f-04e1-46cd-ab94-9b042b361864.png)
 
- 
+
