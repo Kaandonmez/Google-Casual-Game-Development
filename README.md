@@ -4,7 +4,7 @@
 ![Yeni proje21](https://user-images.githubusercontent.com/13854886/179966427-aa83a4ff-f299-4aab-9970-bee120d8a063.gif)
 
 
-
+#
 ### Assignment content
 
 #### - All planets and meteors orbit around the sun according to the gravitational force. (Orbits are not regular yet)
@@ -19,12 +19,13 @@
 
 #### - Clicking on an object (except meteor) opens a panel. The planet name (name in the hierarchy panel) and rigidbody mass are printed in the panel. The panel can be closed with the red button on the top right. (As long as the panel remains open, the camera does not move and the meteor cannot be created.)
 
-#### - All the criteria required in the previous assignment are also met here.
-
-#### - Created shader with shader graph in meteors and sun.
+#### - Created shader with shader graph for meteors and sun.
 
 #### - The entire project has been converted to URP.
 
+#### - All the criteria required in the previous assignment are also met here.
+
+#
 
 ### Previous assignment content
 
