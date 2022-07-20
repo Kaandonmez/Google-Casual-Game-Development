@@ -14,21 +14,20 @@ public class CameraBehv : MonoBehaviour
     public float MeteorSpwnRange = 50f;
 
     [SerializeField]
-    public float yPos = 50f;
+    public float yPos = 50f; //y position of the camera
 
-    public float radius = 120f; // radius of rotation
+    public float radius = 120f; // camera rotation radius
 
-    private float angle = 0; // angle of rotation
-    public float angleSpeed = 0.08f; // speed of rotation
+    private float angle = 0; // angle of rotation (camera)
+    public float angleSpeed = 0.08f; // speed of rotation (camera)
 
     public GameObject meteor; // meteor prefab
-
-    public bool test = false; // test variable
 
     //store staring positon of object
     Vector3 Pos;
 
-    private int initialMeteorSpeed = 100;
+    [SerializeField]
+    public int initialMeteorSpeed = 150;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +55,7 @@ public class CameraBehv : MonoBehaviour
                 {
                     yield return null;
                 }
-
+                //if left mouse button is pressed instantiate meteor
                 if (Input.GetMouseButtonDown(0))
                 {
                     Vector3 pos = new Vector3(
@@ -66,10 +65,15 @@ public class CameraBehv : MonoBehaviour
                     );
                     GameObject meteorInstance = Instantiate(meteor, pos, Quaternion.identity);
 
+                    //after instantiate meteor apply force to meteor through x axis
                     meteorInstance
                         .GetComponent<Rigidbody>()
                         .AddForce(meteorInstance.transform.forward * initialMeteorSpeed);
-                    //Destroy(meteorInstance, 2);
+
+                    //after instantiate meteor apply force to meteor through z axis
+                    meteorInstance
+                        .GetComponent<Rigidbody>()
+                        .AddForce(meteorInstance.transform.right * initialMeteorSpeed);
 
                     Debug.Log(
                         "Meteor instantiated at "
@@ -80,7 +84,7 @@ public class CameraBehv : MonoBehaviour
                     );
                 }
                 //Debug.Log("Mouse moved");
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(2f);
             }
             else
             {
