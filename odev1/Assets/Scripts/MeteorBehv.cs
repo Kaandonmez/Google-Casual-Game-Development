@@ -11,7 +11,10 @@ public class MeteorBehv : MonoBehaviour
 
     void Start() { }
 
-    void update() { }
+    void update()
+    {
+        Destroy(gameObject, 10);
+    }
 
     //when colliding with another object, destroy the meteor
     void OnCollisionEnter(Collision collision)
